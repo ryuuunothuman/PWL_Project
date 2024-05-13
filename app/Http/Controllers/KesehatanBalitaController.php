@@ -2,21 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Anggota;
+use App\Models\kesehatan_balita;
 use Illuminate\Http\Request;
 
-class AnggotaController extends Controller
+class KesehatanBalitaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data = [
-            'pages' => 'Anggota'
-        ];
-        $anggota = Anggota::all();
-        return view('anggota.index', compact('anggota', 'data'));
+        //
     }
 
     /**
@@ -38,7 +34,7 @@ class AnggotaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Anggota $anggota)
+    public function show(kesehatan_balita $kesehatan_balita)
     {
         //
     }
@@ -46,7 +42,7 @@ class AnggotaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Anggota $anggota)
+    public function edit(kesehatan_balita $kesehatan_balita)
     {
         //
     }
@@ -54,7 +50,7 @@ class AnggotaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Anggota $anggota)
+    public function update(Request $request, kesehatan_balita $kesehatan_balita)
     {
         //
     }
@@ -62,7 +58,7 @@ class AnggotaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Anggota $anggota)
+    public function destroy(kesehatan_balita $kesehatan_balita)
     {
         //
     }

@@ -2,21 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Anggota;
+use App\Models\Jadwal;
 use Illuminate\Http\Request;
 
-class AnggotaController extends Controller
+class JadwalController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data = [
-            'pages' => 'Anggota'
-        ];
-        $anggota = Anggota::all();
-        return view('anggota.index', compact('anggota', 'data'));
+        //
     }
 
     /**
@@ -38,7 +34,7 @@ class AnggotaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Anggota $anggota)
+    public function show(Jadwal $jadwal)
     {
         //
     }
@@ -46,7 +42,7 @@ class AnggotaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Anggota $anggota)
+    public function edit(Jadwal $jadwal)
     {
         //
     }
@@ -54,7 +50,7 @@ class AnggotaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Anggota $anggota)
+    public function update(Request $request, Jadwal $jadwal)
     {
         //
     }
@@ -62,7 +58,7 @@ class AnggotaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Anggota $anggota)
+    public function destroy(Jadwal $jadwal)
     {
         //
     }
