@@ -14,5 +14,3 @@ class DashboardController extends Controller
         return view('dashboard.index', compact('data'));
     }
 }
-
-// test pull request
